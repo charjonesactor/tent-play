@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tent Play | A new immersive play by Julia Proctor</title>
+<meta name="description" content="Tent Play is an immersive, clown-inspired new play by Julia Proctor following five women from puberty through menopause. June 4–19, 2027, New York City.">
+<meta property="og:title" content="Tent Play">
+<meta property="og:description" content="In this tent, we are all women and we are all welcome. June 4–19, 2027, NYC.">
+<meta property="og:image" content="images/production/photo-01.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛺</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--maroon:#6e000f;--deep:#5a000c;--yellow:#ffdd57;--cream:#fff6d6;--ink:#2a0005}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--maroon);color:var(--cream);font:400 1.125rem/1.65 'Archivo',Arial,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+h1,h2,h3{font-family:'Anton','Impact',sans-serif;font-weight:400;text-transform:uppercase;line-height:.95;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+section{padding:4.5rem 0}
+h2{font-size:clamp(2.6rem,8vw,5.5rem);color:var(--yellow);margin-bottom:1.5rem}
+p{max-width:62ch}
+
+nav{position:sticky;top:0;z-index:5;background:var(--deep);border-bottom:2px solid var(--yellow)}
+nav .wrap{display:flex;gap:1.25rem;align-items:center;justify-content:space-between;flex-wrap:wrap;padding-top:.7rem;padding-bottom:.7rem}
+nav b{font-family:'Anton',sans-serif;font-weight:400;font-size:1.4rem;color:var(--yellow);letter-spacing:.03em;text-decoration:none}
+nav ul{display:flex;gap:1.1rem;list-style:none;margin:0;padding:0;flex-wrap:wrap;font-size:.95rem;font-weight:600}
+nav ul a{text-decoration:none}
+nav ul a:hover{color:var(--yellow)}
+
+.hero{padding:3rem 0 4rem;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(7rem,28vw,20rem);color:var(--yellow);letter-spacing:-.01em}
+.hero h1 span{display:block}
+.hero h1 span+span{margin-top:-.08em}
+.hero .tag{font-size:clamp(1.1rem,2.6vw,1.6rem);font-weight:700;margin:1.5rem 0 .25rem;max-width:30ch}
+.hero .by{margin:0 0 1.5rem}
+.facts{display:flex;gap:2rem;flex-wrap:wrap;margin:1.5rem 0 2rem;font-weight:600}
+.facts div{border-left:4px solid var(--yellow);padding-left:.8rem}
+.facts small{display:block;font-weight:400;opacity:.85}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.8rem 1.4rem;font:700 1rem 'Archivo',sans-serif;text-decoration:none;border:3px solid var(--yellow);border-radius:999px}
+.btn.fill{background:var(--yellow);color:var(--maroon)}
+.btn:hover{background:var(--cream);border-color:var(--cream);color:var(--maroon)}
+
+.yellow{background:var(--yellow);color:var(--ink)}
+.yellow h2{color:var(--maroon)}
+.invite{font-family:'Anton',sans-serif;font-size:clamp(1.8rem,5vw,3.2rem);line-height:1.05;text-transform:uppercase;color:var(--maroon);margin:1.5rem 0 0;max-width:22ch}
+
+.games{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem;margin-top:2rem}
+.games div{border:3px solid var(--yellow);padding:1.2rem}
+.games h3{font-size:1.7rem;color:var(--yellow);margin-bottom:.5rem}
+.games p{margin:0;font-size:1rem}
+
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.75rem}
+.team figure{margin:0}
+.team img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:28%;background:var(--deep);filter:grayscale(1);display:block}
+.team h3{font-size:1.6rem;color:var(--maroon);margin:.8rem 0 .2rem}
+.team p{margin:0;font-size:.95rem;font-weight:600}
+.bio{margin-top:2.5rem;border-top:3px solid var(--maroon);padding-top:1.25rem}
+
+.tiers{list-style:none;padding:0;margin:1.5rem 0 2rem;max-width:520px}
+.tiers li{display:flex;justify-content:space-between;gap:1rem;padding:.6rem 0;border-bottom:1px solid rgba(255,246,214,.35);font-weight:600}
+.tiers span:last-child{color:var(--yellow);white-space:nowrap}
+
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.75rem}
+.gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--deep);display:block}
+
+footer{background:var(--deep);padding:2.5rem 0;font-size:1rem}
+footer .wrap{display:flex;gap:1.5rem;justify-content:space-between;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <b>TENT PLAY</b>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tickets">Tickets</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#support">Support</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <h1><span>Tent</span><span>Play</span></h1>
+    <p class="tag">An immersive, heartfelt theatre-clown-experience-show-celebration.</p>
+    <p class="by">A new play by Julia Proctor</p>
+    <div class="facts">
+      <div>June 4–19, 2027<small>12 performances over three weekends</small></div>
+      <div>New York City<small>Venue to be announced</small></div>
+      <div>$20–$40<small>Tiered, affordable tickets</small></div>
+    </div>
+    <div class="btns">
+      <a class="btn fill" href="#tickets">Get tickets</a>
+      <a class="btn" href="DONATE_LINK_HERE">Donate</a>
+      <a class="btn" href="https://www.instagram.com/tent.play/">Instagram</a>
+      <a class="btn" href="CLOWN_GYM_LINK_HERE">Clown Gym</a>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="yellow">
+  <div class="wrap">
+    <h2>Welcome to the tent</h2>
+    <p>Women gather monthly in the tent to support, commiserate, and celebrate each other as they move through the ridiculous, painful, heartbreaking, and joyful experience of female biology over the course of their reproductive years.</p>
+    <p>Tent Play follows five women from puberty through menopause, and invites the audience to be part of the journey through games and facilitated engagement.</p>
+    <p class="invite">In this tent, we are all women and we are all welcome.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>You're in the play</h2>
+    <p>The show is staged in the round, with the audience as part of the design. Clown-inspired, real-time theatrical games mean every performance is different, depending on who is in the tent that night.</p>
+    <div class="games">
+      <div><h3>The Game of Womanhood</h3><p>The audience is asked “What else is expected of a woman?” and the company acts out their answers.</p></div>
+      <div><h3>The Egg of Guilt</h3><p>Help deliver the egg as a character labors and births her emotional baggage.</p></div>
+      <div><h3>Chanting Hemorrhoids</h3><p>Join the chorus. Yes, really.</p></div>
+    </div>
+    <p style="margin-top:2.5rem">After every performance, stay for drinks in the lobby. We'll also host post-show talkbacks, a panel with medical professionals on perimenopause, and talking circles for building community near you.</p>
+  </div>
+</section>
+
+<section id="tickets" class="yellow">
+  <div class="wrap">
+    <h2>Tickets</h2>
+    <p><strong>June 4–19, 2027, New York City.</strong> 12 performances over three weekends. Tiered pricing from $20 to $40. Venue and on-sale date to be announced.</p>
+    <div class="btns" style="margin-top:1.5rem">
+      <a class="btn" style="background:var(--maroon);color:var(--yellow);border-color:var(--maroon)" href="#contact">Join the mailing list</a>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <h2>Team</h2>
+    <div class="team" style="color:var(--cream)">
+      <figure><img src="images/team/julia-proctor.jpg" alt="Julia Proctor" loading="lazy"><h3 style="color:var(--yellow)">Julia Proctor</h3><p>Playwright &amp; Producer</p></figure>
+      <figure><img src="images/team/char-jones.jpg" alt="Char Jones" loading="lazy"><h3 style="color:var(--yellow)">Char Jones</h3><p>Creative Producer</p></figure>
+      <figure><img src="images/team/emma-simon.jpg" alt="Emma Simon" loading="lazy"><h3 style="color:var(--yellow)">Emma Simon</h3><p>Associate Producer</p></figure>
+      <figure><img src="images/team/mia-goldammer.jpg" alt="Mia Goldammer" loading="lazy"><h3 style="color:var(--yellow)">Mia Goldammer</h3><p>Associate Producer</p></figure>
+      <figure><img src="images/team/cece-lebowe.jpg" alt="Cece Lebowe" loading="lazy"><h3 style="color:var(--yellow)">Cece Lebowe</h3><p>Associate Producer</p></figure>
+      <figure><img src="images/team/headshot-06.jpg" alt="Sixth team member" loading="lazy"><h3 style="color:var(--yellow)">NAME HERE</h3><p>ROLE HERE</p></figure>
+    </div>
+    <div class="bio" style="border-color:var(--yellow)">
+      <h3 style="font-size:2rem;color:var(--yellow);margin-bottom:.6rem">About Julia Proctor</h3>
+      <p>Founding Director of Clown Gym, NYU Tisch Drama faculty member, and co-founding producer of PhysFestNYC. Julia is an accomplished theatrical clown, director, performer, educator, and community builder. Tent Play is her first scripted play, bringing together more than a decade of experience creating ensemble-driven, audience-centered theatre.</p>
+      <a class="btn" href="CLOWN_GYM_LINK_HERE">Visit Clown Gym</a>
+    </div>
+  </div>
+</section>
+
+<section id="history" class="yellow">
+  <div class="wrap">
+    <h2>Development</h2>
+    <p><strong>Summer 2026:</strong> A sold-out first-draft public reading, directed by Justine Williams as part of Project Y's Women in Theatre Festival.</p>
+    <p><strong>January 2027:</strong> A week-long script development workshop with a director, five actors, a stage manager, and a dramaturg.</p>
+    <p><strong>June 2027:</strong> An Equity showcase production with five actors plus a swing and a full design team.</p>
+  </div>
+</section>
+
+<section id="support">
+  <div class="wrap">
+    <h2>Help us build the tent</h2>
+    <p>The reading and the workshop are fully funded. Your gift helps make the June 2027 run happen. Donors receive perks including seats and merch.</p>
+    <ul class="tiers">
+      <li><span>Executive Producer</span><span>$5,000–$10,000+</span></li>
+      <li><span>Associate Producer</span><span>$2,000–$4,999</span></li>
+      <li><span>Production Sponsor</span><span>$500–$1,999</span></li>
+      <li><span>Patron / Angel</span><span>$100–$499</span></li>
+      <li><span>Friend of the Show</span><span>$25–$99</span></li>
+    </ul>
+    <div class="btns"><a class="btn fill" href="DONATE_LINK_HERE">Donate</a></div>
+    <p style="margin-top:1.5rem">Can't give? We need volunteers, ushers, and coordinators, and we're still seeking a few key creatives. Email us, follow <a href="https://www.instagram.com/tent.play/">@tent.play</a>, and spread the word.</p>
+  </div>
+</section>
+
+<section id="photos" class="yellow">
+  <div class="wrap">
+    <h2>Production photos</h2>
+    <div class="gallery">
+      <img src="images/production/photo-01.jpg" alt="Tent Play production photo 1" loading="lazy">
+      <img src="images/production/photo-02.jpg" alt="Tent Play production photo 2" loading="lazy">
+      <img src="images/production/photo-03.jpg" alt="Tent Play production photo 3" loading="lazy">
+      <img src="images/production/photo-04.jpg" alt="Tent Play production photo 4" loading="lazy">
+      <img src="images/production/photo-05.jpg" alt="Tent Play production photo 5" loading="lazy">
+      <img src="images/production/photo-06.jpg" alt="Tent Play production photo 6" loading="lazy">
+      <img src="images/production/photo-07.jpg" alt="Tent Play production photo 7" loading="lazy">
+      <img src="images/production/photo-08.jpg" alt="Tent Play production photo 8" loading="lazy">
+      <img src="images/production/photo-09.jpg" alt="Tent Play production photo 9" loading="lazy">
+      <img src="images/production/photo-10.jpg" alt="Tent Play production photo 10" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div>
+      <h3 style="font-size:2rem;color:var(--yellow);margin-bottom:.5rem">Contact</h3>
+      <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a><br>
+      <a href="https://www.instagram.com/tent.play/">@tent.play</a>
+    </div>
+    <div>Tent Play &copy; 2027 Julia Proctor</div>
+  </div>
+</footer>
+
+</body>
+</html>
